@@ -19369,7 +19369,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1143572558
+--- !u!64 &1143572562
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19378,9 +19378,9 @@ MeshCollider:
   m_GameObject: {fileID: 1143572553}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8098145888541626270, guid: d5d1cc8f493db0b47ac7dca9ff977390, type: 3}
 --- !u!1 &1145753509
@@ -23676,7 +23676,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1482932631}
   - component: {fileID: 1482932630}
-  - component: {fileID: 1482932632}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -23761,18 +23760,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &1482932632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482932629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1488365150
 GameObject:
   m_ObjectHideFlags: 0
