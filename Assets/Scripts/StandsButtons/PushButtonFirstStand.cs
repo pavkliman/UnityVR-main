@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class PushButtonTest : MonoBehaviour
+public class PushButtonFirstStand : MonoBehaviour
 {
     [SerializeField] private XRSimpleInteractable simpleInteractable;
 
