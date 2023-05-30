@@ -11,7 +11,7 @@ public class GetInformationAboutObject : XRGrabInteractable
     private TextMeshProUGUI textNameModel;
     private TextMeshProUGUI textInfoModel;
     private GameObject gameObjSelect;
-    private Material mOriginal;
+    [SerializeField] private Material mOriginal;
     private Material mHover;
     private MeshRenderer objMR;
 
@@ -20,7 +20,10 @@ public class GetInformationAboutObject : XRGrabInteractable
         textNameModel = GameObject.Find("TextNameModel").GetComponent<TextMeshProUGUI>();
         textInfoModel = GameObject.Find("TextInfoModel").GetComponent<TextMeshProUGUI>();
         gameObjSelect = GameObject.Find($"{gameObject.name}"+"_Select");
-        mOriginal = gameObjSelect.GetComponent<MeshRenderer>().material;
+        if (mOriginal == null)
+        {
+            mOriginal = gameObjSelect.GetComponent<MeshRenderer>().material;
+        }
         objMR = gameObjSelect.GetComponent<MeshRenderer>();
         mHover = Resources.Load("MRedR", typeof(Material)) as Material;
     }
